@@ -1,0 +1,36 @@
+// Napiši program koji prima broj bodova sa kolegija i ispisuje ocjenu (prema previlniku o
+ocjenjivanju). Ukoliko je ocjena pozitivna ispisati teskt sa čestitkom i ocjenom.
+
+let bodovi = prompt("Unesite broj bodova");
+let poruka;
+
+function izracun_ocj(bodovi)  {
+if(bodovi<50) {  poruka = "Nedovoljan, ocjena 1"; 
+    return 1;
+    }
+
+if(bodovi>=50 && bodovi<65) {
+    poruka = "Dovoljan, ocjena 2"; 
+    return 2;
+    }
+
+if(bodovi>=65 && bodovi<75) {
+    poruka = "Dobar, ocjena 3"; 
+    return 3;
+    }
+
+if(bodovi>=75 && bodovi<90) {
+    poruka = "Vrlo dobar, ocjena 4"; 
+    return 4;
+    }
+
+if(bodovi>=90 && bodovi<100) {
+    poruka = "Odlican, ocjena 5"; 
+    return 5;
+    }
+
+}
+
+let ocjena=izracun_ocj(bodovi);
+
+console.log(poruka);
