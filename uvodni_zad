@@ -1,0 +1,15 @@
+//Isprobati program za zbrajanje prvih 10 brojeva u konzoli preglednika. Modificirati program na način da
+se uvede dodatno mapiranje (varijabla) koja će poopćiti problem i ukazati na to koliko brojeva treba
+zbrojiti (npr. n=10 ). Isprobati program za prvih 1000 brojeva ( n=1000 ).
+
+let n = 1000;
+
+function suma(n){
+    let zbroj = 0;
+    for (i=1; i<=n; i++){
+        zbroj += i;
+    }
+        return zbroj;
+}
+
+console.log(`Suma brojeva od 1 do ${n} je ${suma(n)}`)
